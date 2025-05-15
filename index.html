@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestrowanie się</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Stwórz konto</h2>
+    <div class="formularz">
+        <form action="login.html" method="post">
+            <span class="konto">Masz już konto? <a href="login.html">Zaloguj się!</a> <br> </span>
+            <div class="main">
+                <div class="label">
+                    <label for="plec">Nazwa kontatku</label>
+                </div>
+                <div class="content">
+                    <input type="radio" name="plec" id="plec1" value="Pan" required> <label for="plec1">Pan</label>
+                    <input type="radio" name="plec" id="plec2" value="Pani" required> <label for="plec2">Pani</label> <br>
+                </div> <br>
+                <div class="label">
+                    <label for="imie">Imię</label> 
+                </div>
+                <div class="content">
+                    <input type="text" name="imie" id="imie" required> <br>
+                </div>
+                <div class="label">
+                    <label for="nazwisko">Nazwisko</label>
+                </div>
+                <div class="content">
+                    <input type="text" name="nazwisko" id="nazwisko" required> <br>
+                </div>
+                <div class="label">
+                    <label for="firma">Firma</label>
+                </div>
+                <div class="content">
+                    <input type="text" name="firma" id="firma"> <span class="optional">Opcjonalne</span> <br>
+                </div>
+                <div class="label">
+                    <label for="nip">Numer NIP</label>
+                </div>
+                <div class="content">
+                    <input type="number" name="nip" id="nip"> <span class="optional">Opcjonalne</span> <br>
+                </div>
+                <div class="label">
+                    <label for="mail">E-mail</label>
+                </div>
+                <div class="content">
+                    <input type="email" name="mail" id="mail" required> <br>
+                </div>
+                <div class="label">
+                    <label for="haslo">Hasło</label>
+                </div>
+                <div class="content">
+                    <input type="password" name="haslo" id="haslo" required minlength="8"> <br>
+                </div>
+                <div class="label">
+                    <label for="data">Data urodzenia</label>
+                </div>
+                <div class="content">
+                    <input type="date" name="data" id="data" placeholder="DD.MM.RRRR"> <span class="optional">Opcjonalne</span> <br>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="oferty" id="oferty"> <label for="oferty">Otrzymuj oferty od naszych partnerów</label> <br>
+                    <input type="checkbox" name="newsletter" id="newsletter"> <label for="newsletter">Zapisz się do newslettera</label> <br>
+                    <input type="checkbox" name="warunki" id="warunki"  required> <label for="warunki">Akceptuję ogólne warunki użytkowania i politykę prywatności</label><br>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Stwórz konto">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

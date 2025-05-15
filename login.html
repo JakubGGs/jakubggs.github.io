@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie się</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Zaloguj się</h2>
+    <div class="formularz">
+        <form action="home.html" method="post">
+            <span class="konto">Nie masz konta? <a href="index.html">Stwórz je!</a></span> <br>
+            <div class="label">
+                <label for="mail">E-mail</label>
+            </div>
+            <div class="content">
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div class="label">
+                <label for="haslo">Hasło</label>
+            </div>
+            <div class="content">
+                <input type="password" name="haslo" id="haslo" required>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Zaloguj się">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
